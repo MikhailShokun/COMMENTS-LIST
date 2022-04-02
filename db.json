@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Ivan"
+    },
+    {
+      "id": 2,
+      "name": "Sasha"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "tech": "HTML"
+    },
+    {
+      "id": 2,
+      "tech": "CSS"
+    },
+    {
+      "id": 3,
+      "tech": "ReactJS"
+    }
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "json-server --watch db.json -p 3001"
+  }
+}
+
+
+
