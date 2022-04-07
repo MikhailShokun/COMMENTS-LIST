@@ -1,50 +1,225 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
   "comments": [
     {
       "id": 1,
       "body": "some comment",
       "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "users": [
-    {
-      "id": 1,
-      "name": "Ivan"
     },
     {
-      "id": 2,
-      "name": "Sasha"
-    }
-  ],
-  "skills": [
-    {
-      "id": 1,
-      "tech": "HTML"
+      "id": 2
     },
     {
-      "id": 2,
-      "tech": "CSS"
+      "id": 3
     },
     {
-      "id": 3,
-      "tech": "ReactJS"
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "body": "753",
+      "postId": 5,
+      "id": 6
+    },
+    {
+      "body": "45+",
+      "id": 7
+    },
+    {
+      "name": "Mikhail",
+      "body": "hello world!",
+      "id": 8
+    },
+    {
+      "name": "MiniShok",
+      "body": "proverka",
+      "id": 9
+    },
+    {
+      "name": "MiniShok",
+      "body": "ok ok ok ok",
+      "id": 10
+    },
+    {
+      "name": "КАНБАН",
+      "body": "КАНБАН",
+      "id": 11
+    },
+    {
+      "name": "MiniShok",
+      "body": "123",
+      "id": 12
+    },
+    {
+      "name": "MiniShok",
+      "body": "MiniShok",
+      "id": 13
+    },
+    {
+      "name": "Mikhail",
+      "body": "MiniShok",
+      "id": 14
+    },
+    {
+      "name": "MiniShok",
+      "body": "111111111111111111111111111111111111111111111111111111111111111111111111111111111115555555555555555555555555555555555555555555555555555555555555555555555555555555555555555",
+      "id": 15
+    },
+    {
+      "name": "MiniShok",
+      "body": "159",
+      "id": 16
+    },
+    {
+      "name": "MiniShok",
+      "body": "654\n65\n654\n89\n8949\n87",
+      "id": 17
+    },
+    {
+      "name": "MiniShok",
+      "body": "159",
+      "id": 18
+    },
+    {
+      "name": "MiniShok",
+      "body": "1111111111111111111111111111111111111111111111111111111111111111111111111111 111111111111111111111111111     11111111111111111111111111111111\n1111111111111111 111111111111555555555555555555     66666666666666666666666666666",
+      "id": 19
+    },
+    {
+      "name": "MiniShok",
+      "body": "159",
+      "id": 20
+    },
+    {
+      "name": "MiniShok",
+      "body": "159",
+      "id": 21
+    },
+    {
+      "name": "MiniShok",
+      "body": "159",
+      "id": 22
+    },
+    {
+      "name": "Мишаня",
+      "body": "all ok, i'm go sleep. now 0:31 . 04/04/2022",
+      "id": 23
+    },
+    {
+      "name": "MiniShok",
+      "body": "MiniShok",
+      "id": 24
+    },
+    {
+      "name": "КАНБАН",
+      "body": "КАНБАН",
+      "id": 25
+    },
+    {
+      "name": "MiniShok",
+      "body": "7837",
+      "id": 26
+    },
+    {
+      "name": "MiniShok",
+      "body": "MiniShok",
+      "id": 27
+    },
+    {
+      "name": "MiniShok",
+      "body": "5994",
+      "id": 28
+    },
+    {
+      "name": "MiniShok",
+      "body": "jiki",
+      "id": 29
+    },
+    {
+      "name": "MiniShok",
+      "body": "ijiji",
+      "id": 30
+    },
+    {
+      "name": "MiniShok",
+      "body": "kpp",
+      "id": 31
+    },
+    {
+      "name": "aaaaaa",
+      "body": "aaaaaa",
+      "id": 32
+    },
+    {
+      "name": "КАНБАН",
+      "body": "5994",
+      "id": 33
+    },
+    {
+      "name": "MiniShok",
+      "body": "456",
+      "id": 34
+    },
+    {
+      "name": "MiniShok",
+      "body": "48951",
+      "id": 35
+    },
+    {
+      "name": "MiniShok",
+      "body": "159",
+      "id": 36
+    },
+    {
+      "name": "MiniShok",
+      "body": "159",
+      "id": 37
+    },
+    {
+      "name": "MiniShok",
+      "body": "commentId",
+      "id": 38
+    },
+    {
+      "name": "MiniShok",
+      "body": "MiniShok",
+      "id": 39
+    },
+    {
+      "name": "MiniShok",
+      "body": "159",
+      "id": 40
+    },
+    {
+      "name": "MiniShok",
+      "body": "1594",
+      "id": 41
+    },
+    {
+      "name": "MiniShok",
+      "body": "userId",
+      "id": 42
+    },
+    {
+      "name": "MiniShok",
+      "body": "MiniShok",
+      "id": 43
+    },
+    {
+      "name": "MiniShok",
+      "body": "MiniShok",
+      "id": 44
+    },
+    {
+      "name": "Мишаня",
+      "body": "data",
+      "id": 45
+    },
+    {
+      "name": "КАНБАН",
+      "body": "КАНБАН",
+      "id": 46
     }
-  ],
-  "scripts": {
-    "start": "react-scripts start",
-    "server": "json-server --watch db.json -p 3001"
-  }
+  ]
 }
-
-
-

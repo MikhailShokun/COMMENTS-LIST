@@ -1,0 +1,14 @@
+.commentsBody{
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 480px;
+    border: 1px solid #a2a2a2;
+    text-align: center;
+    /*overflow-wrap: break-word;*/
+    line-break: anywhere;
+    background: rgb(79, 98, 148);
+border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
