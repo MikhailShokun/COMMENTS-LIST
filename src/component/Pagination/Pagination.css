@@ -1,0 +1,9 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+nav{
+    background: #c2c1c2;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styles from "./Comment.module.css";
 
 const Comment = ({name, body}) => {

@@ -13,6 +13,10 @@
     flex-direction: column;
 }
 
-pre{
+.loading{
     color: white;
+}
+
+.list{
+    width: 100%;
 }

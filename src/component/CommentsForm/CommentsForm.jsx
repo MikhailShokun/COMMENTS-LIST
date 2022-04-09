@@ -2,32 +2,30 @@ import "./CommentsForm.css";
 import React, {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
 import axios from "axios";
+import Comment from "../Comment/Comment";
 
-
-const CommentsForm = (props) => {
-    const postAxios = (data) => {
+const CommentsForm = ({getComments, setLoading}) => {
+    const createComments = (data) => {
         return axios.post("http://localhost:3001/comments", {
             name: data.name,
-            body: data.comment
-        }).then(response => {
-            console.log(response)
-        }).catch(error => {
-            console.error(error);
-        });
+            body: data.commentBody
+        })
     }
+    useEffect(()=> {
+        getComments();
+    }, [setLoading]);
 
     const {
         register, handleSubmit, reset, formState: {errors, isValid}
     } = useForm({mode: "onChange"});
     const onSubmit = (data) => {
-        postAxios(data)
-        // console.log(data);
+        createComments(data);
+        getComments();
         reset();
     };
 
     return (
-        <div className={'App'}>
-            <h1>Add comments (with react-hook-form)</h1>
+        <div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div> {errors.name && <p>{errors.name.message || "Errors"}</p>}</div>
                 <input defaultValue="" {...register("name",
@@ -43,7 +41,7 @@ const CommentsForm = (props) => {
 
                         }
                     })} placeholder={'Your name'}/>
-                <textarea  {...register("comment", {required: true})} placeholder={'Your comment...'}/>
+                <textarea  {...register("commentBody", {required: true})} placeholder={'Your comment...'}/>
                 {errors.post && <p>This field is required</p>}
                 <input type="submit" disabled={!isValid} value={'Add comment'}/>
             </form>
