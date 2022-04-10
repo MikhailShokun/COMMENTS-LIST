@@ -6,4 +6,6 @@
 
 nav{
     background: #c2c1c2;
+    border-radius: 5px;
+    min-width: 450px;
 }

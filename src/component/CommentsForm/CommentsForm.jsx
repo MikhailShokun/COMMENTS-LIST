@@ -11,9 +11,9 @@ const CommentsForm = ({getComments, setLoading}) => {
             body: data.commentBody
         })
     }
-    useEffect(()=> {
-        getComments();
-    }, [setLoading]);
+    // useEffect(()=> {
+    //     getComments();
+    // }, [setLoading]);
 
     const {
         register, handleSubmit, reset, formState: {errors, isValid}

@@ -1,6 +1,5 @@
 import React from 'react';
 import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
 import "./Pagination.css"
 
 const AppPagination = ({commentsPerPage, totalComments, setCurrentPage}) => {
@@ -17,7 +16,8 @@ const AppPagination = ({commentsPerPage, totalComments, setCurrentPage}) => {
         <div className={'pagesWrap'}>
             <div className={'pagination'}>
                     <Pagination onChange={handleChange}
-                                count={pageNumbers.length} showFirstButton showLastButton />
+                                count={pageNumbers.length}
+                                showFirstButton showLastButton/>
             </div>
         </div>
     );
