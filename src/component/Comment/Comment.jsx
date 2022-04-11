@@ -2,7 +2,6 @@ import React from 'react';
 import styles from "./Comment.module.css";
 import ava from "../../assets/images/git.png";
 
-
 const Comment = ({name, body, time}) => {
     return (
         <div className={styles.commentsWrapper}>
@@ -19,11 +18,9 @@ const Comment = ({name, body, time}) => {
                     {time}
                 </div>
             </div>
-
             <div>
                 {body}
             </div>
-
         </div>
     )
 }

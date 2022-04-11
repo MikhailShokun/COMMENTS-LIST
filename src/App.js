@@ -5,7 +5,6 @@ import CommentsForm from "./component/CommentsForm/CommentsForm";
 import CommentsList from "./component/CommentsList/CommentsList";
 import AppPagination from "./component/Pagination/AppPagination";
 
-
 const App = () => {
     const [comments, setComment] = useState([]);
     const [loading, setLoading] = useState(false);

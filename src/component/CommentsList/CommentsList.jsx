@@ -3,10 +3,8 @@ import styles from "./CommentsList.module.css"
 import Comment from "../Comment/Comment";
 import moment from "moment";
 
-
 const CommentsList = ({comments, loading}) => {
-
-let time = moment().format('DD.MM.YYYY')
+let time = moment().format('DD.MM.YYYY');
 
     return (
         <div className={styles.listWrapper}>
@@ -17,7 +15,6 @@ let time = moment().format('DD.MM.YYYY')
                         <Comment key={comment.id}
                                  name={comment.name}
                                  body={comment.body}
-                                 time={time}
                         />)
                 }
             </div>

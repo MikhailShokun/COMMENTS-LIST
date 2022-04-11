@@ -4,9 +4,7 @@ import {useForm} from "react-hook-form";
 import axios from "axios";
 
 const CommentsForm = ({getComments, setLoading}) => {
-
-
-    const createComments = (data) => {
+   const createComments = (data) => {
         return axios.post("http://localhost:3001/comments", {
             name: data.name,
             body: data.commentBody,
