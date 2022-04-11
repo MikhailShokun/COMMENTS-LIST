@@ -1,19 +1,20 @@
 import "./CommentsForm.css";
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {useForm} from "react-hook-form";
 import axios from "axios";
-import Comment from "../Comment/Comment";
 
 const CommentsForm = ({getComments, setLoading}) => {
+
+
     const createComments = (data) => {
         return axios.post("http://localhost:3001/comments", {
             name: data.name,
-            body: data.commentBody
+            body: data.commentBody,
         })
     }
-    // useEffect(()=> {
-    //     getComments();
-    // }, [setLoading]);
+    useEffect(()=> {
+        getComments();
+    }, [setLoading]);
 
     const {
         register, handleSubmit, reset, formState: {errors, isValid}

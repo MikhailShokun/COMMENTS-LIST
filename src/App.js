@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import axios from "axios";
 import CommentsForm from "./component/CommentsForm/CommentsForm";
 import CommentsList from "./component/CommentsList/CommentsList";
@@ -13,7 +13,6 @@ const App = () => {
     const [commentsPerPage] = useState(8);
 
 
-
     const getComments = async () => {
         setLoading(true);
         const response = await axios.get('http://localhost:3001/comments');
@@ -21,10 +20,6 @@ const App = () => {
         setComment(response.data);
         setLoading(false);
     }
-
-    useEffect(()=> {
-        getComments();
-    }, [setLoading]);
 
      // Get current page
     const indexOfLastComment = currentPage * commentsPerPage;
