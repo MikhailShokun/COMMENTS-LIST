@@ -1,15 +1,17 @@
 import './App.css';
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import CommentsForm from "./component/CommentsForm/CommentsForm";
 import CommentsList from "./component/CommentsList/CommentsList";
 import AppPagination from "./component/Pagination/AppPagination";
+
 
 const App = () => {
     const [comments, setComment] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [commentsPerPage] = useState(8);
+
 
 
     const getComments = async () => {
@@ -19,6 +21,10 @@ const App = () => {
         setComment(response.data);
         setLoading(false);
     }
+
+    useEffect(()=> {
+        getComments();
+    }, [setLoading]);
 
      // Get current page
     const indexOfLastComment = currentPage * commentsPerPage;

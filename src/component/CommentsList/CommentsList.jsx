@@ -15,6 +15,7 @@ let time = moment().format('DD.MM.YYYY');
                         <Comment key={comment.id}
                                  name={comment.name}
                                  body={comment.body}
+                                 time={time}
                         />)
                 }
             </div>

@@ -1,5 +1,5 @@
 import "./CommentsForm.css";
-import React, {useEffect} from "react";
+import React from "react";
 import {useForm} from "react-hook-form";
 import axios from "axios";
 
@@ -10,10 +10,6 @@ const CommentsForm = ({getComments, setLoading}) => {
             body: data.commentBody,
         })
     }
-    useEffect(()=> {
-        getComments();
-    }, [setLoading]);
-
     const {
         register, handleSubmit, reset, formState: {errors, isValid}
     } = useForm({mode: "onChange"});
