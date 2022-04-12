@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MikhailShokun/COMMENTS-LIST/static/css/main.794382e1.css",
+    "main.js": "/MikhailShokun/COMMENTS-LIST/static/js/main.77d74161.js",
+    "static/js/787.d1a6ae3d.chunk.js": "/MikhailShokun/COMMENTS-LIST/static/js/787.d1a6ae3d.chunk.js",
+    "index.html": "/MikhailShokun/COMMENTS-LIST/index.html",
+    "main.794382e1.css.map": "/MikhailShokun/COMMENTS-LIST/static/css/main.794382e1.css.map",
+    "main.77d74161.js.map": "/MikhailShokun/COMMENTS-LIST/static/js/main.77d74161.js.map",
+    "787.d1a6ae3d.chunk.js.map": "/MikhailShokun/COMMENTS-LIST/static/js/787.d1a6ae3d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.794382e1.css",
+    "static/js/main.77d74161.js"
+  ]
+}
