@@ -1,5 +1,7 @@
-GitHub Pages  https://mikhailshokun.github.io/COMMENTS-LIST/
+GitHub Pages  
+https://mikhailshokun.github.io/COMMENTS-LIST/
 
+А здесь я никак не настрою REST API, так как у меня запросы идут на локальную сеть,- сайт не может отобразиться((( в процессе решения этой небольшой проблемы)))
 
 # Getting Started with Create React App
 
