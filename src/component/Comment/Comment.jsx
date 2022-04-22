@@ -15,7 +15,7 @@ const Comment = ({name, body, time}) => {
                     </div>
                 </div>
                 <div className={styles.time}>
-                    {time}
+                    {time ? time : 'some time ago'}
                 </div>
             </div>
             <div>

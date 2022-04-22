@@ -5,14 +5,12 @@ import CommentsForm from "./component/CommentsForm/CommentsForm";
 import CommentsList from "./component/CommentsList/CommentsList";
 import AppPagination from "./component/Pagination/AppPagination";
 
-
 const App = () => {
     const [comments, setComment] = useState([]);
+
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [commentsPerPage] = useState(8);
-
-
 
     const getComments = async () => {
         setLoading(true);
@@ -34,12 +32,11 @@ const App = () => {
     return (
         <div className={'app'}>
             <h1>Add comments (with react-hook-form)</h1>
-            <CommentsForm getComments={getComments} setLoading={setLoading} />
+            <CommentsForm getComments={getComments} />
             <AppPagination commentsPerPage={commentsPerPage}
                            totalComments={comments.length}
                            setCurrentPage={setCurrentPage}/>
             <CommentsList comments={currentComments} loading={loading} />
-
         </div>
     );
 }
